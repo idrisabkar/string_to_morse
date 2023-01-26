@@ -14,5 +14,11 @@ morse_codes = {
     'M': '--', 'Z': '--..'
 }
 data = input("Please Enter your String :")
-encoded_string = [morse_codes.get(letter.upper()) for letter in data]
-print(encoded_string)
+
+
+def encode(input_string):
+    encoded_string = [morse_codes.get(letter.upper()) for letter in input_string]
+    print(" ".join(encoded_string))
+
+
+encode(data)
